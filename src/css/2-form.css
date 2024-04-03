@@ -1,0 +1,70 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+}
+form {
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+}
+
+label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+  width: 360px;
+  height: 40px;
+  order: 1;
+  border-radius: 8px;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 360px;
+  height: 80px;
+  order: 2;
+  border-radius: 8px;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+input:hover,
+textarea:hover {
+  stroke: black;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: transparent; /* Делаем плейсхолдер невидимым по умолчанию */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #aaa; /* Цвет плейсхолдера при фокусировке */
+}
