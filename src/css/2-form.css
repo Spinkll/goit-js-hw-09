@@ -19,6 +19,7 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background: #4e75ff;
+  cursor: pointer;
 }
 
 label {
@@ -40,6 +41,7 @@ input {
   height: 40px;
   order: 1;
   border-radius: 8px;
+  border-width: 1px;
 }
 
 textarea {
@@ -48,23 +50,25 @@ textarea {
   height: 80px;
   order: 2;
   border-radius: 8px;
+  border-width: 1px;
 }
 
 button:hover {
   background: #6c8cff;
+  cursor: pointer;
 }
 
 input:hover,
 textarea:hover {
-  stroke: black;
+  border-color: black;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: transparent; /* Делаем плейсхолдер невидимым по умолчанию */
+  color: transparent;
 }
 
 input:focus::placeholder,
 textarea:focus::placeholder {
-  color: #aaa; /* Цвет плейсхолдера при фокусировке */
+  color: #aaa;
 }
