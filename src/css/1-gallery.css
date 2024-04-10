@@ -15,3 +15,14 @@
   max-width: 100%;
   height: auto;
 }
+
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+.sl-wrapper .sl-close,
+.sl-next,
+.sl-prev,
+.sl-counter {
+  color: white !important;
+}

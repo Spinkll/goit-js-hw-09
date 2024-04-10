@@ -92,7 +92,7 @@ const gallery = ({ preview, original, description }) => {
 const galleryItems = images.map(gallery);
 galleryContainer.append(...galleryItems);
 
-new SimpleLightbox('.gallery ul', {
+new SimpleLightbox('.gallery a', {
   animationSpeed: 200,
   animationSlide: true,
   disableScroll: false,
