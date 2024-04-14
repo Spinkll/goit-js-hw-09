@@ -29,7 +29,7 @@ label {
   line-height: 150%;
   letter-spacing: 0.04em;
   color: #2e2f42;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -40,8 +40,15 @@ input {
   width: 360px;
   height: 40px;
   order: 1;
-  border-radius: 8px;
+  border-radius: 4px;
   border-width: 1px;
+  border: #808080 2px solid;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 textarea {
@@ -49,8 +56,15 @@ textarea {
   width: 360px;
   height: 80px;
   order: 2;
-  border-radius: 8px;
+  border-radius: 4px;
   border-width: 1px;
+  border: #808080 2px solid;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 
 button:hover {
@@ -60,7 +74,7 @@ button:hover {
 
 input:hover,
 textarea:hover {
-  border-color: black;
+  border-color: #000000;
 }
 
 input::placeholder,

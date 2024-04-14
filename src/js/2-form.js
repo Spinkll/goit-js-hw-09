@@ -3,9 +3,6 @@ const textArea = form.elements.message;
 const input = form.elements.email;
 const localStorageKey = 'feedback-form-state';
 
-textArea.value = localStorage.getItem(localStorageKey)?.trim() ?? '';
-input.value = localStorage.getItem(localStorageKey)?.trim() ?? '';
-
 window.addEventListener('DOMContentLoaded', () => {
   const storedData = JSON.parse(localStorage.getItem(localStorageKey)) ?? {};
   textArea.value = storedData.message ?? '';
@@ -25,8 +22,8 @@ form.addEventListener('input', evt => {
 form.addEventListener('submit', evt => {
   evt.preventDefault();
 
-  const emailValue = evt.target.elements.email.value.trim();
-  const messageValue = evt.target.elements.message.value.trim();
+  const emailValue = input.value.trim();
+  const messageValue = textArea.value.trim();
 
   if (emailValue === '' || messageValue === '') {
     alert('Будь ласка, заповніть обидва поля');

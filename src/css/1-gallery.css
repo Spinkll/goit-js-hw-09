@@ -1,8 +1,9 @@
 .gallery {
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px 0px;
+  max-width: calc(75vw - 10px);
+  margin: auto;
 }
 
 .gallery-item {
@@ -12,8 +13,8 @@
 }
 
 .gallery-image {
-  max-width: 100%;
-  height: auto;
+  width: 360px;
+  height: 200px;
 }
 
 .sl-wrapper {
